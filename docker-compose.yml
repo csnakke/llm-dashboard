@@ -5,4 +5,8 @@ services:
       - "3000:3000"
     environment:
       - NODE_ENV=production
+    # API keys for live-data refresh (LLM Stats, Artificial Analysis).
+    # Kept out of the image via .dockerignore; injected at runtime instead.
+    env_file:
+      - .env.local
     restart: unless-stopped
