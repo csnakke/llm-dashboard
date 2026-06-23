@@ -176,3 +176,9 @@ src/
 
 - A few benchmark fields are snapshot-only (no public live source wired): `humaneval`, `humaneval_x`, `multipl_e`, `mcp_bench`.
 - The Docker image uses Next.js standalone output and copies `src/data` into the runtime so the snapshot is available at runtime.
+
+---
+
+## License
+
+Released under the [MIT License](LICENSE).
