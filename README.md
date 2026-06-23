@@ -47,17 +47,24 @@ Missing benchmarks are skipped and weights are renormalized over what's availabl
 - Node.js **22+** (or Docker)
 - npm
 
-### 1. Install dependencies
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/csnakke/llm-dashboard.git
+cd llm-dashboard
+```
+
+### 2. Install dependencies
 
 ```bash
 npm install
 ```
 
-### 2. Configure API keys (optional, for live refresh)
+### 3. Configure API keys (optional, for live refresh)
 
 Create a `.env.local` file in the project root (see [API keys](#api-keys) below). The app runs fine **without** keys — it serves the bundled snapshot and the two key-gated sources are simply skipped during a refresh.
 
-### 3. Run the development server
+### 4. Run the development server
 
 ```bash
 npm run dev
