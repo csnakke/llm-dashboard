@@ -1,6 +1,9 @@
+name: llm-dashboard
+
 services:
   app:
     build: .
+    container_name: llm-dashboard
     ports:
       - "3000:3000"
     environment:
